@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <!-- Bootstrap -->
+  <link
+  rel="stylesheet"
+  href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+  />
+  <!-- CSS Stylesheet -->
+  <link rel="stylesheet" href="./assets/style.css" />
+</head>
+
+<body>
+  <!-- ################################# HEADER & NAV SECTION ####################################### -->
+  <section id="header">
+    <h1>Portfolio</h1>
+    <nav>
+        <ul>
+            <li>
+                <a href="#about-me">About Me</a>
+            </li>
+            <li>
+                <a href="#projects-header">Projects</a>
+            </li>
+            <li>
+                <a href="#contact-me">Contact Me</a>
+            </li>
+        </ul>
+    </nav>
+    </section>
+
+    <div class="main-image">
+        <!-- Image is assigned as background in CSS -->
+        <h2 class="">WILL PIKUS</h2>
+    </div>
+
+  <!-- ################################# MAIN CONTENT ####################################### -->
+  <main> 
+
+    <div id="about-me" class="row d-flex align-items-center justify-content-center">
+
+        <div class="box mobile">
+            <h2 class="box-header">ABOUT ME</h2>
+        </div>
+
+        <div class="box mobile">
+            <p class="about-text">My name is Will. <br><br> I have a diverse range of skills and passions. I love solving real world problems while making solutions look good. Check out my recent work and core competencies.</p>
+        </div>
+
+        <div class="box mobile d-flex justify-content-center">
+            <img id="me-photo" src="./assets/images/me_dark.jpg" alt="Image of me" class="image-float-left" />
+        </div>
+
+        <div class="box mobile">
+            <div class="skills-pad align-middle">
+                <p class="p-skills">Full Stack Web Development</p>
+                <p class="p-skills">Graphic Design</p>
+                <p class="p-skills">Supply Chain Management</p>
+                <p class="p-skills">Management Information Systems</p>
+                <p class="p-skills">Business Analytics</p>
+            </div>
+        </div>
+
+    </div>
+     <!-- ################################# PROJECTS SECTION ####################################### -->
+    <div id="projects">
+      <!-- Projects Header -->
+      <div id="projects-header">
+        <h2 class="box-proj-header">PROJECTS</h2>
+      </div>
+
+      <!--Leading Project -->
+        <div class="big-card-column">
+          <a href="https://will-pikus.github.io/Restroom-Finder/" class="big-card">
+            <h2 class="card-header">Restroom Finder App<br><span>JavaScript/HTML/CSS/GoogleMaps</span></h2>
+          </a>
+       </div>
+
+      <!-- All Other Projects -->
+      <section class="projects">
+        <div class="card-column">
+          <a href="https://will-pikus.github.io/Workday-Scheduler/" class="card code-card rps">
+            <h2 class="card-header">Workday Scheduler<br><span>JavaScript/BootStrap</span></h2>
+          </a>
+       </div>
+
+       <div class="card-column">
+          <a href="https://will-pikus.github.io/weather-dashboard/" class="card code-card type">
+            <h2 class="card-header">Weather Dashboard<br><span>JavaScript/APIs</span></h2>
+          </a>
+       </div>
+
+       <div class="card-column">
+         <a href="https://rocky-island-25113.herokuapp.com/" class="card code-card tradeUp">
+            <h2 class="card-header">TradeUp<br><span>JavaScript/Express/SQL/Handlebars</span></h2>
+         </a>
+       </div>
+
+    </div>
+    <!-- ################################# CONTACT ME SECTION ####################################### -->
+    
+    <section id="contact-me" class="row d-flex align-items-center justify-content-around">
+
+        <div id="contact-header" class="contact-mobile align-items-center">
+            <h2>LETS TALK<span id="dot">.</span></h2>
+        </div>
+
+        <div id="contact-text"class="contact-mobile">
+            <p id="thanks">Thank you for viewing my portfolio! <br><br> If you are interested in any of my abilities, please reach out through any prefferd method listed on the right. <br><br>- WP</p>
+        </div>
+
+      <div id="contact-info" class="contact-mobile">
+          <p class="contact-p"><span>Email: </span><a class="contact-a" href="williampikus@gmail.com">williampikus@gmail.com</a></p>
+          <p class="contact-p"><span>Phone:</span><a href="(805) 204-6502">(805) 204-6502</a></p>
+          <p class="contact-p"><span>Linkedin:</span><a href="https://www.linkedin.com/in/willpikus/">LinkedIn</a></p>
+          <p class="contact-p"><span>GitHub:</span><a href="https://github.com/Will-Pikus">GitHub</a></p>
+          <p class="contact-p"><span>Resume:</span><a href="./fullstack-dev-resume.pdf">Resume</a></p>
+      </div>
+
+    </section>
+  </main>
+
+  <!-- ################################# FOOTER ####################################### -->
+  <footer>
+    <h3>Made by Will Pikus</h3>
+  </footer>
+
+</body>
+
+</html>

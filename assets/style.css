@@ -1,0 +1,428 @@
+/* ############################# VARIABLES ################################*/
+
+:root {
+    /* Color Scheme */
+    --wood-brown: rgb(44, 32, 14);
+    --outer-space: #0e0e0e;
+    --forest: #212b25;
+    --dark-background: rgb(25, 25, 25);
+    --blood-orange:rgb(255, 94, 0) ;
+    --stone-grey:rgb(175, 175, 175);
+    /* Font Scheme */
+  }
+  
+  /* ############################# STANDARD PAGE STYLE ################################*/
+  
+  * {
+  /* box-sizing: border-box; */
+    padding: 0;
+    margin: 0;
+  }
+  
+  body {
+    background-color: #ffffff;
+  }
+  
+  a {
+    color: var(--outer-space);
+    text-decoration: none;
+  }
+  
+  p {
+    font-size: 16px;
+  }
+  
+  /* ############################# HEADER & NAV BAR ################################*/
+  
+  #header {
+    padding: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: var(--outer-space);
+    background-color: white;
+    border-bottom: 10px solid var(--stone-grey);
+    /* width: 100%;
+    position: fixed;
+    z-index: 5; */
+  }
+  
+  #header h1 {
+    display: inline-block;
+    font-size: 48px;
+    padding-left: 30px;
+  }
+  
+  #header nav {
+    padding-top: 15px;
+    padding-right: 20px;
+    float: right;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 5px;
+  }
+  
+  #header li {
+    display: inline-block;
+    padding-left: 30px;
+  }
+  
+  /* ############################# HEADER IMAGE #########################################*/
+
+  .main-image {
+    height: 700px;
+    width: 100%;
+    background-image: url("./images/bwrock.jpg");
+    background-size: cover;
+    background-position: center;
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .main-image h2{
+    color: var(--blood-orange);
+    background-color: rgb(0,0,0, .3);
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    border: solid 15px white;
+    position: relative;
+    font-size: 100px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 400px;
+    padding: 20px;
+    text-align: center;
+  }
+
+  /* ########################## ABOUT ME SECTION ############################################# */
+
+  #about-me {
+      background-color:var(--dark-background);
+  }
+  .box{
+      background-color: var(--dark-background);
+      /* border: solid 1px red; */
+      height: 400px;
+      width: 20%;
+  }
+
+  .box-header{
+    color: white;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    border: solid 15px white;
+    position: relative;
+    font-size: 500%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 350px;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .about-text{
+      color: white;
+      font: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+      font-size: 24px;
+      padding: 75px;
+  }
+
+  #me-photo{
+      height: 100%;
+      width: 400px;
+  }
+
+  .p-skills{
+      margin: 10;
+      color: black;
+      font-weight: bold;
+      font-size: 24px;
+      background-color: wheat;
+      padding: 5px;
+      padding-left: 15px;
+  }
+
+  .skills-pad{
+      padding: 10px;
+      padding-top: 50px;
+  }
+
+  /* ############################# PROJECTS SECTION ################################*/
+/* #projects{
+    margin-top: 50px;
+} */
+
+
+/* PROJECTS SECTION HEADER */
+#projects-header {
+    /* border: solid 12px var(--outer-space); */
+    border-top: solid 15px var(--blood-orange);
+    width: 100%;
+    height: 250px;
+    padding-top: 10px;
+    /* text-align: center;
+    margin: auto; */
+    background-color:rgb(235, 235, 235);
+    margin-bottom: 40px;
+}
+
+.box-proj-header{
+    color: var(--outer-space);
+    font-weight: bold;
+    font-size: 400%;
+    font-family: Arial, Helvetica, sans-serif;
+    border: solid 15px black;
+    padding: 5px;
+    text-align: center;
+    width: 400px;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    text-align: center;
+    background-color: white;
+}
+
+    /* LEADING PROJECT*/
+    .big-card-column{
+    flex: 1 0 100%;
+    padding: 1.5rem;
+    /* when the screen resizes, make it so our columns don't jump in size */
+    transition: flex-basis 500ms linear;
+    margin-bottom: 1.5rem;
+    }
+    
+    .big-card{
+    /* positioning */
+    margin:auto;
+    margin-top: 85px;
+    margin-bottom: 50px;
+    min-height: 100%;
+    padding: 2rem;
+    height: 700px;
+    width: 90%;
+    /* image setting & styling */
+    background-image: url("./images/restroom-finder.JPG");
+    background-size: cover;
+    background-position:top;
+    border-radius: 25px;
+    /* flexbox column */
+    display: flex;
+    flex-direction: column; 
+    justify-content: flex-start;
+    }
+    
+    /* LEAD PROJECT HEADER */
+    .big-card .card-header {
+    /* using position and neg margin to move header over card */
+    position: relative;
+    margin: -8rem 0 1.5rem 0;
+    padding: 0.5rem 1rem;
+    transition: all 0.5s ease-in-out;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    border-bottom: solid 2px white;
+    background-color: white;
+    /* border-bottom: solid 2px var(--blood-orange); */
+    }
+    
+    /* CHANGE FONT FOR SUBTEXT ON CARD HEADER */
+    .big-card .card-header span{
+    font-size: 17px;
+    font-family: 'Courier New';
+    }
+    
+    /* ALL OTHER PROJECTS */
+    .projects {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-top: 55px;
+    justify-content: center;
+    }
+    
+    /* using a mobile-first approach, set base column width to be 100% and we'll update it using media queries for larger screen sizes */
+    .card-column {
+    flex: 1 0 100%;
+    padding: 1.5rem;
+    /* when the screen resizes, make it so our columns don't jump in size */
+    transition: flex-basis 500ms linear;
+    margin-bottom: 1.5rem;
+    }
+    
+    /* make each code card a flexbox column to align and justify content within it */
+    .code-card {
+    /* positioning */
+    min-height: 100%;
+    padding: 2rem;
+    height: 300px;
+    border-radius: 25px;
+    margin-top: 40px;
+    /* flexbox column */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    }
+    
+    /* CARD IMAGES */
+    .rps{
+    background-image: url("./images/workday-scheduler.jpg");
+    background-size: cover;
+    background-position: center;
+    }
+    
+    .type{
+    background-image: url("./images/weather-dashboard.jpg");
+    background-size: cover;
+    background-position: center;
+    }
+    
+    .tradeUp{
+    background-image: url("./images/trade-up.JPG");
+    background-size: cover;
+    background-position: center;
+    }
+    
+    /* HEADER FOR CARDS */
+    .code-card .card-header {
+    /* using position and neg margin to move header over card */
+    position: relative;
+    margin-top: 10px;
+    margin: -11rem 0 1.5rem 0;
+    padding: 0.5rem 1rem;
+    transition: all 0.5s ease-in-out;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    border-bottom: solid 2px rgb(134, 134, 134);
+    background-color: white;
+    /* border-bottom: solid 2px var(--blood-orange); */
+    }
+    
+    .code-card .card-header span{
+    /* change font for subtext on card*/
+    font-size: 17px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+    
+    /* CARD SHADOW ON HOVER */
+    .code-card:hover {
+    box-shadow: 10px 10px 15px var(--stone-grey);
+    cursor: pointer;
+    }
+    
+    .big-card:hover {
+    box-shadow: 10px 10px 15px var(--stone-grey);
+    cursor: pointer;
+    }
+    
+    /* CARD SIZING */
+    /* each card's code block grows to the height of the largest code block on the page, making each card even in height */
+    .code-card .code-block {
+    flex-grow: 1;
+    }
+    
+    /* #############################CONTACT ME SECTION ########################################*/
+    
+    #contact-me {
+        background-color: var(--dark-background);
+        margin-top: 75px;
+        border-bottom: 10px solid var(--stone-grey);
+    }
+    
+    #contact-me h2 {
+        color: white;
+        font-weight: bold;
+        font-size: 80px;
+        font-family: Arial, Helvetica, sans-serif;
+        border: solid 12px white;
+        width: 300px;
+        height: 250px;
+        padding: 20px;
+        margin-top: 20px;
+        margin-left: 80px;
+        text-align: left;
+    }
+
+    #thanks{
+        font-size: 22px;
+        color: white;
+        width: 475px;
+        margin-top: 30px;
+    }
+    
+    #contact-info{
+        height: 300px;
+        margin-top: 20px;
+        /* margin-left: 455px; */
+        /* width: 600px; */
+
+    }
+
+    .contact-p{
+        color: white;
+        font-weight: bold;
+        font-size: 20px;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        background-color: wheat;
+        padding: 7px;
+        /* border-radius: 0px 5px 5px 0px; */
+    }
+
+    #contact-info span{
+        background-color: var(--dark-background);
+        margin-right: 15px;
+        padding: 15px;
+
+    }
+
+    #dot{
+        color: var(--blood-orange);
+    }
+
+    /* ############################# FOOTER SECTION ########################################*/
+    footer{
+    text-align: center;
+    padding: 10px;
+    color: var(--outer-space);
+    }
+    
+
+    /* ############################## MEDIA SCREEN ########################################## */
+  @media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    [class*="mobile"] {
+      width: 100%;
+    }
+
+    /* [class*="contact-mobile"] {
+        width: 100%;
+    } */
+
+    .card-column{
+        margin-bottom: 150px;
+    }
+  }
+
+  @media only screen and (min-width: 769px) {
+    [class*="mobile"] {
+      width: 50%;
+    }
+    .card-column {
+        flex: 0 0 30%;
+        max-width: 30%;
+    }
+    /* [class*="contact-mobile"] {
+        width: 100%;
+    } */
+  }
+
+  @media only screen and (min-width: 1461px) {
+    [class*="mobile"] {
+      width: 25%;
+    }
+  }
